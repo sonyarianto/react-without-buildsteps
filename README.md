@@ -20,8 +20,8 @@ No, there is no `npm install` things.
 Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3000` on current repo directory, buahahaha. Errrr you know better lah. In this repository there is file called `index.html`. Yes, that's it. That's the code that contains the HTML, JS (React code, router etc) and no CSS (just standard styling).
 
 ## What's included on this skeleton project
-- Simple SPA (Single Page Application) website with React (React and React DOM)
-- Using Router, React Router and React Router DOM (all CDN version)
+- Simple SPA (Single Page Application) website with React (React and React DOM).
+- Using Router, React Router and React Router DOM (all CDN version).
 - Using Babel standalone version (CDN). I know standalone is not for production, but hey relaxxx bro.
 - Simple two page components (Home and About) and a header component (Header) to represent the component things.
 
