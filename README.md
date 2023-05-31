@@ -18,9 +18,12 @@ No, there is no installation.
 No, there is no `npm install` things.
 
 ## Then how to run?
-Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3000` on current repo directory, buahahaha. Errrr you know better lah. In this repository there is file called `index.html`. Yes, that's it. That's the code that contains the HTML, JS (React code, router etc) and no CSS (just standard styling).
+Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3000` on current repo directory, buahahaha. Errrr you know better lah. My other favorite static web server is using `Live Preview` extension from inside Visual Studio Code.
+
+In this repository there is file called `index.html`. Yes, that's it. That's the code that contains the HTML, JS (React code, router etc) and no CSS (just standard styling).
 
 ## What's included on this skeleton project
+- Single `index.html` file that contains all code.
 - Simple SPA (Single Page Application) website with React (React and React DOM).
 - Using Router, React Router and React Router DOM (all CDN version).
 - Using Babel standalone version (CDN). I know standalone is not for production, but hey relaxxx bro. Babel is used here to handle JSX, so you still can use your JSX in this project.
@@ -41,7 +44,7 @@ Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3
 
 https://react-without-buildsteps.vercel.app/
 
-and just view source it.
+and just view source it. Easy deployment to Vercel and other static hosting.
 
 ## License
 
