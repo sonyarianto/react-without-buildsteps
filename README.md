@@ -41,6 +41,8 @@ Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3
 
 https://react-without-buildsteps.vercel.app/
 
+and just view source it.
+
 ## License
 
 MIT
