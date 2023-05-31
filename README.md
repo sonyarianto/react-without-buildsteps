@@ -1,5 +1,5 @@
 
-# react-without-buildstep
+# react-without-buildsteps
 Why? Why not. This skeleton project is dedicated to:
 -  CDN fans around the world.
 -  jQuery lovers around the world but want to use React the way like using jQuery.
