@@ -25,7 +25,7 @@ Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3
 - Using Babel standalone version (CDN). I know standalone is not for production, but hey relaxxx bro.
 - Simple two page components (Home and About) and a header component (Header) to represent the component things.
 
-## What CDN used here?
+## What CDNs used here?
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
