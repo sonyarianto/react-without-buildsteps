@@ -6,7 +6,7 @@ Why? Why not. This skeleton project is dedicated to:
 -  People that want to see and how to use React without any build steps.
 -  People that hate `npm install` things.
 -  People that hate build steps.
--  People that want to learn React from different perspective.
+-  People that want to learn React from different perspective and angle.
 -  People that interested to extend this simple code.
 -  Myself, that want to have documentation about using React with CDN.
 
