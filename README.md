@@ -20,7 +20,7 @@ No, there is no `npm install` things.
 ## Then how to run?
 Just run using your favorite static web server. My favorite is `php -S 0.0.0.0:3000` on current repo directory, buahahaha. Errrr you know better lah. My other favorite static web server is using `Live Preview` extension from inside Visual Studio Code.
 
-In this repository there is file called `index.html`. Yes, that's it. That's the code that contains the HTML, JS (React code, router etc) and no CSS (just standard styling). You can extend it to the maxxxx.
+In this repository there is a file called `index.html`. Yes, that's it. That's the code that contains the HTML, JS (React code, router etc) and no CSS (just standard styling). You can extend it to the maxxxx.
 
 ## What's included on this skeleton project
 - Single `index.html` file that contains all code.
