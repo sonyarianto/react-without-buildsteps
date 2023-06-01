@@ -44,7 +44,7 @@ In this repository there is file called `index.html`. Yes, that's it. That's the
 
 https://react-without-buildsteps.vercel.app/
 
-and just view source it. Easy deployment to Vercel and other static hosting.
+and just view source it. Easy deployment to Vercel or other static hosting.
 
 ## License
 
