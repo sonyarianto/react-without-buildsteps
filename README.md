@@ -43,7 +43,7 @@ In this repository there is a file called `index.html`. Yes, that's it. That's t
 
 ## Demo
 
-https://react-without-buildsteps.vercel.app/
+https://react-without-buildsteps.vercel.app
 
 and just view source it. Easy deployment to Vercel or other static hosting.
 
