@@ -33,12 +33,12 @@ In this repository there is a file called `index.html`. Yes, that's it. That's t
 ## What CDNs used here?
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@remix-run/router@1.7.0/dist/router.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-router@6.14.0/dist/umd/react-router.production.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-router-dom@6.14.0/dist/umd/react-router-dom.production.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.22.5/babel.min.js"></script>
+react
+react-dom
+react-router
+react-router-dom
+@remix-run/router
+@babel/standalone
 ```
 
 ## Demo
