@@ -1,86 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>React without build steps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@remix-run/router@1.21.0/dist/router.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-router@6.28.0/dist/umd/react-router.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-router-dom@6.28.0/dist/umd/react-router-dom.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.26.4/babel.min.js"></script>
+  <title>React Client-Side Routing</title>
+  <!-- Load Babel Standalone -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-
 <body>
   <div id="root"></div>
+  <script type="text/babel" data-type="module" data-presets="react">
+    // Import React, ReactDOM, and Remix Router
+    import React from "https://esm.sh/react@18";
+    import ReactDOM from "https://esm.sh/react-dom@18";
+    import { createBrowserRouter, RouterProvider, Link } from "https://esm.sh/react-router-dom@6";
 
-  <script type="text/babel" data-presets="env,react">
-    const { createBrowserRouter, RouterProvider, Route, Link } = window.ReactRouterDOM;
-    const { useRoutes, useNavigate } = window.ReactRouter;
+    // Home component
+    const Home = () => (
+      <div>
+        <h1>Home Page</h1>
+        <p>Welcome to the Home Page!</p>
+        <nav>
+          <Link to="/about">Go to About</Link>
+        </nav>
+        <Footer />
+      </div>
+    );
 
-    // Header component
-
-    function Header() {
-      const navigate = useNavigate();
-
-      return (
-        <header>
-          <nav>
-            <button onClick={() => navigate('/')}>Home (path is /)</button>&nbsp;
-            <button onClick={() => navigate('/about')}>About Us (path is /about)</button>
-          </nav>
-        </header>
-      );
-    }
+    // About component
+    const About = () => (
+      <div>
+        <h1>About Page</h1>
+        <p>This is the About Page.</p>
+        <nav>
+          <Link to="/">Go to Home</Link>
+        </nav>
+        <Footer />
+      </div>
+    );
 
     // Footer component
-
     function Footer() {
       return (
-        <pre>Just view source of this page (index.html) and you will see all of the code there, easy to follow and learn</pre>
+        <pre>Just view source of this page (index.html) and you will see all of the code there, easy to follow and learn.</pre>
       )
     }
 
-    // Home component
-
-    function Home() {      
-      return (
-        <div>
-          <Header />
-          <h1>Welcome to the Home Page!</h1>
-          <p>This is the home page content.</p>
-          {/* <Link to="about">About Us</Link> */}
-          <Footer />
-        </div>
-      );
-    }
-
-    // About component
-    
-    function About() {
-      return (
-        <div>
-          <Header />
-          <h1>About Us</h1>
-          <p>This is the about page content.</p>
-          {/* <Link to="/">Home</Link> */}
-          <Footer />
-        </div>
-      );
-    }
-    
+    // Define routes using Remix Router
     const router = createBrowserRouter([
-        { path: '/', element: <Home /> },
-        { path: '/about', element: <About /> },
-      ]
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
+      }
+    ]);
+
+    // Render the application
+    ReactDOM.createRoot(document.getElementById("root")).render(
+      <RouterProvider router={router} />
     );
-
-    // Render the router
-
-    ReactDOM.render(<RouterProvider router={router} />, document.getElementById('root'));
   </script>
 </body>
-
 </html>
