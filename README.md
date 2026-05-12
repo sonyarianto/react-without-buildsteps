@@ -1,4 +1,5 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsonyarianto%2Freact-without-buildsteps)
+[![Deploy to PandaStack](https://dashboard.pandastack.io/deploy-button.svg)](https://dashboard.pandastack.io/deploy?repo=sonyarianto/react-without-buildsteps&type=static&buildCmd=npm+run+build&outputDir=dist)
 
 # react-without-buildsteps
 Why? Why not. This skeleton project is dedicated to:
